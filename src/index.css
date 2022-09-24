@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto:wght@400&display=swap");
+
+.main-div {
+  height: 100vh;
+  background-color: rgb(208, 198, 255);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.test {
+  color: rgb(35, 35, 96);
+  font-family: "Poppins", sans-serif;
+}
+
+/* card */
+.card-text {
+  overflow-y: scroll;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(106, 86, 196);
+}
+
+.card-img {
+  background-color: rgb(35, 35, 96);
+}
+
+.img:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.card:hover {
+  box-shadow: 1px 1px 12px rgba(17, 17, 17, 0.2);
+}
+
+.card h5 {
+  color: rgb(28, 28, 83);
+}
+
+/* styling scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(205, 205, 205);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(163, 163, 163);
+}
+
+/* swiper */
+.swiper-wrapper {
+  padding-bottom: 40px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(75, 96, 137);
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(43, 43, 104);
+}
+
+/* media query */
+@media screen and (max-width: 1200px) {
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
